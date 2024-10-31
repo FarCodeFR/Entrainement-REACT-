@@ -1,0 +1,32 @@
+nav {
+  display: grid;
+  grid-column: 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 1%;
+  background: rgb(24, 40, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(24, 40, 43, 1) 27%,
+    rgba(135, 31, 46, 1) 100%
+  );
+}
+
+#link {
+  border-radius: 10px;
+  border: solid goldenrod 1px;
+  background: rgba(255, 255, 255, 0.233);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#link:first-child {
+  grid-area: 1/2;
+  width: 100px;
+}
+
+#link:last-child {
+  grid-area: 1/3;
+  width: 100px;
+}
